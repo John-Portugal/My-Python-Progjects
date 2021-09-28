@@ -147,7 +147,7 @@ def stat_finder():
 
 
 
-    
+ #Starts the program, i want to add a input that takes player name to make program more personal   
 start_rolls = input("Press Y key to start rolling!: ")
 if start_rolls == "Y" or "y":
     stat_finder()
