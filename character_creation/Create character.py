@@ -1,12 +1,16 @@
 import random
-def stat_finder():
-    #First stat roll
+def roll_sort():
      d6_1 = random.randint(1,6)
      d6_2 = random.randint(1,6)
      d6_3 = random.randint(1,6)
      d6_4 = random.randint(1,6)
      stats = [d6_1, d6_2, d6_3, d6_4]
      stats.sort()
+     return stats
+
+def stat_finder():
+    #First stat roll
+     stats = roll_sort()
      del stats[0]
      print(stats)
      total_1 = sum(stats)
@@ -16,12 +20,7 @@ def stat_finder():
      con_1 = input("Press Y key to keep rolling!")
      if con_1 == "Y" or "y":
         #This rolls for the second stat
-         d6_1 = random.randint(1,6)
-         d6_2 = random.randint(1,6)
-         d6_3 = random.randint(1,6)
-         d6_4 = random.randint(1,6)
-         stats = [d6_1, d6_2, d6_3, d6_4]
-         stats.sort()
+         stats = roll_sort()
          del stats[0]
          print(stats)
          total_2 = sum(stats)
@@ -31,12 +30,7 @@ def stat_finder():
          con_2 = input("Press Y key to keep rolling!")
          if con_2 == "Y" or "y":
             #Third stat
-            d6_1 = random.randint(1,6)
-            d6_2 = random.randint(1,6)
-            d6_3 = random.randint(1,6)
-            d6_4 = random.randint(1,6)
-            stats = [d6_1, d6_2, d6_3, d6_4]
-            stats.sort()
+            stats = roll_sort()
             del stats[0]
             print(stats)
             total_3 = sum(stats)
@@ -46,12 +40,7 @@ def stat_finder():
             con_3 = input("Press Y key to keep rolling!")
             if con_3 == "Y" or "y":
                 #fourth stat
-                d6_1 = random.randint(1,6)
-                d6_2 = random.randint(1,6)
-                d6_3 = random.randint(1,6)
-                d6_4 = random.randint(1,6)
-                stats = [d6_1, d6_2, d6_3, d6_4]
-                stats.sort()
+                stats = roll_sort()
                 del stats[0]
                 print(stats)
                 total_4 = sum(stats)
@@ -61,12 +50,7 @@ def stat_finder():
                 con_4 = input("Press Y key to keep rolling!")
                 if con_4 == "Y" or "y":
                 #fifth stat
-                    d6_1 = random.randint(1,6)
-                    d6_2 = random.randint(1,6)
-                    d6_3 = random.randint(1,6)
-                    d6_4 = random.randint(1,6)
-                    stats = [d6_1, d6_2, d6_3, d6_4]
-                    stats.sort()
+                    stats = roll_sort()
                     del stats[0]
                     print(stats)
                     total_5 = sum(stats)
@@ -76,12 +60,7 @@ def stat_finder():
                     con_5 = input("Press Y key to keep rolling!")
                     if con_5 == "Y" or "y":
                     #sixth stat
-                        d6_1 = random.randint(1,6)
-                        d6_2 = random.randint(1,6)
-                        d6_3 = random.randint(1,6)
-                        d6_4 = random.randint(1,6)
-                        stats = [d6_1, d6_2, d6_3, d6_4]
-                        stats.sort()
+                        stats = roll_sort()
                         del stats[0]
                         print(stats)
                         total_6 = sum(stats)
